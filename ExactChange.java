@@ -70,7 +70,7 @@ public class ExactChange {
             totalChange %= 5;
         } 
 
-        if (totalChange >= 1) {
+        else {
         pennies = totalChange;
 
         if (pennies == 1) {
