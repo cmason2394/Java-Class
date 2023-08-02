@@ -7,6 +7,7 @@ public class welcome {
 
         System.out.println("Please enter your username: ");
         userName = scnr.next();
+        scnr.close();
 
         System.out.println("Hello " + userName + ", and welcome to CS Online!");
     }

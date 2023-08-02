@@ -12,6 +12,7 @@ public class ExactChange {
 
         System.out.print("Enter the total amount of change (in pennies): ");
         totalChange = scnr.nextInt();
+        scnr.close();
 
         if (totalChange < 0) {
             System.out.println("Invalid amount of change. Re-enter change: ");

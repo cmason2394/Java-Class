@@ -21,6 +21,8 @@ public class LabProgram {
       System.out.print("Enter the length of the workout in minutes: ");
       timeMinutes = scnr.nextInt();
 
+      scnr.close();
+
       //calculate calories burned during workout
       caloriesBurnedWomen = ((ageYears * 0.074) - (weightPounds * 0.05741) + (heartRatePbm * 0.4472) - 20.4022) * (timeMinutes / 4.184);
       caloriesBurnedMen = ((ageYears * 0.2017) + (weightPounds * 0.09036) + (heartRatePbm * 0.6309) - 55.0969) * (timeMinutes / 4.184);

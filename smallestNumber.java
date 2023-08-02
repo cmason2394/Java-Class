@@ -15,6 +15,8 @@ public class smallestNumber {
         System.out.print("\n1Enter the third integer: ");
         num3 = scnr.nextInt();
 
+        scnr.close();
+
         if ((num1 <= num2) && (num1 <= num3)) {
             smallestNum = num1;
         } 
