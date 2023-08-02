@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LabProgram {
+public class CalorieEstimator {
    public static void main(String[] args) {
       //declare variables
       double caloriesBurnedWomen;
