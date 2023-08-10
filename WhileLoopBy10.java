@@ -12,6 +12,7 @@ public class WhileLoopBy10 {
         int1 = scnr.nextInt();
         System.out.print("\nEnter second integer: ");
         int2 = scnr.nextInt();
+        scnr.close();
 
         //check to make sure second integer is bigger than the first
         if (int1 > int2) {
