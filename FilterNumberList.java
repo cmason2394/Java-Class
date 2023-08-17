@@ -9,7 +9,9 @@ public class FilterNumberList {
 
     public static void outputIntsLessThanOrEqualToThreshold(int[] array, int arrSize, int threshold) {
         for (int i = 0; i < arrSize; i++) {
-            if (array[i] <)
+            if (array[i] <= threshold) {
+                System.out.print(array[i] + " ");
+            }
         }
     }
     public static void main(String[] args) {
