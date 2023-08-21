@@ -43,7 +43,38 @@ public class EvenOrOdd {
 
     public static void main(String[] args) {
         /**
-         * 
+         * puts user input into an array with a for loop
+         * if/else statement to call the even and odd functions
+         * determines if the array is all odd, all even, or neither
+         * outputs an appropriate response
          */
+
+         int i = 0;
+         int arrayLength = 0;
+         Scanner scnr = new Scanner(System.in);
+        
+         System.out.println("What the number of integers you wish to enter?");
+         arrayLength = scnr.nextInt();
+
+         int[] userInputs = new int[arrayLength];
+
+         for (i = 0; i < arrayLength; i++) {
+            System.out.print("Enter next input: ");
+            userInputs[i] = scnr.nextInt();
+            }
+
+
+        if (isArrayEven(userInputs, arrayLength) == true) {
+            System.out.println("all even");
+        }
+
+        else if (isArrayOdd(userInputs, arrayLength) == true) {
+            System.out.println("all odd");
+        }
+
+        else {
+            System.out.println("not even or odd");
+        }
+
     }
 }
