@@ -65,6 +65,8 @@ public class EvenOrOdd {
             userInputs[i] = scnr.nextInt();
             }
 
+         scnr.close();
+
 
         if (isArrayEven(userInputs, arrayLength) == true) {
             System.out.println("all even");
