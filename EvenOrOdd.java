@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class EvenOrOdd {
     /**
      * Determines if an inputed list of integers contains all even numbers,
@@ -18,9 +20,9 @@ public class EvenOrOdd {
                 isEven = false;
                 break;
             }
-
-            return isEven;
         }
+
+        return isEven;
     }
 
     public static boolean isArrayOdd(int[] arrayValues, int arraySize) {
@@ -36,9 +38,9 @@ public class EvenOrOdd {
                 isOdd = false;
                 break;
             }
-
-            return isOdd;
         }
+
+        return isOdd;
     }
 
     public static void main(String[] args) {
@@ -53,7 +55,7 @@ public class EvenOrOdd {
          int arrayLength = 0;
          Scanner scnr = new Scanner(System.in);
         
-         System.out.println("What the number of integers you wish to enter?");
+         System.out.println("How many integers do you wish to enter?");
          arrayLength = scnr.nextInt();
 
          int[] userInputs = new int[arrayLength];
