@@ -4,10 +4,22 @@ public class FoodItem {
    private double carbs;
    private double protein;
    
-   // TODO: Define default constructor
+   // DONE: Define default constructor
+   public FoodItem() {
+    name = "None";
+    fat = 0;
+    carbs = 0;
+    protein = 0;
+   }
    
-   // TODO: Define second constructor with arguments to initialize 
+   // DONE: Define second constructor with arguments to initialize 
    //       private fields (name, fat, carbs, protein)
+   public FoodItem (String foodName, double foodFat, double foodCarbs, double foodProtein) {
+    name = foodName;
+    fat = foodFat;
+    carbs = foodCarbs;
+    protein = foodProtein;
+   }
    
    public String getName() {
       return name;

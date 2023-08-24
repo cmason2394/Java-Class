@@ -6,14 +6,22 @@ public class NutritionalInfo {
       
       FoodItem foodItem1 = new FoodItem();
       
+      System.out.println("What food are you eating?");
       String itemName = scnr.next();
+      System.out.println("How many grams of fat does one serving contain?");
       double amountFat = scnr.nextDouble();
+      System.out.println("How many grams of carbohydrates does one serving contain?");
       double amountCarbs = scnr.nextDouble();
+      System.out.println("How many grams of protein does one serving contain?");
       double amountProtein = scnr.nextDouble();
       
       FoodItem foodItem2 = new FoodItem(itemName, amountFat, amountCarbs, amountProtein);
       
+      System.out.print("Enter number of servings: ");
       double numServings = scnr.nextDouble();
+      System.out.println();
+
+      scnr.close();
       
       foodItem1.printInfo();
       System.out.printf("Number of calories for %.2f serving(s): %.2f\n", numServings, 
