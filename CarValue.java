@@ -7,9 +7,13 @@ public class CarValue {
       
       Car myCar = new Car();
       
+      System.out.print("Enter model year: ");
       int userYear = scnr.nextInt();
+      System.out.print("\nEnter purchase price: ");
       int userPrice = scnr.nextInt();
+      System.out.print("\nEnter the current year: ");
       int userCurrentYear = scnr.nextInt();
+      scnr.close();
       
       myCar.setModelYear(userYear);
       myCar.setPurchasePrice(userPrice);

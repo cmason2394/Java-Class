@@ -7,6 +7,9 @@ public class WordFrequency {
         for (int i = 0; i < listSize; i++) {
             if (currWord == wordsList[i]) {
                 wordCount++;
+                System.out.println("current word: " + currWord);
+                System.out.println("compared to " + wordsList[i]);
+                System.out.println("word count: " + wordCount);
             }
         }
 
@@ -30,10 +33,14 @@ public class WordFrequency {
 
         scnr.close();
 
-        for (int i = 0; i < listLength; i++) {
-            compareWord = userWords[i];
+        compareWord = userWords[0];
+
+        while (compareWord <= userWords[listLength - 1]) {
             frequency = getFrequencyOfWord(userWords, listLength, compareWord);
             System.out.println(compareWord + " " + frequency);
+            ++i;
+            compareWord = userWords[i];
         }
+
     }
 }
