@@ -15,18 +15,29 @@ public class BookInformation {
       String eTitle, eAuthor, ePublisher, ePublicationDate, edition;
       int numVolumes;
 
+      System.out.print("Enter title: ");
       title = scnr.nextLine();
+      System.out.print("\nEnter author: ");
       author = scnr.nextLine();
+      System.out.print("\nEnter publishing company: ");
       publisher = scnr.nextLine();
+      System.out.print("\nEnter publication date: ");
       publicationDate = scnr.nextLine();
 
+      System.out.print("\nEnter title: ");
       eTitle = scnr.nextLine();
+      System.out.print("\nEnter author: ");
       eAuthor = scnr.nextLine();
+      System.out.print("\nEnter publishing company: ");
       ePublisher = scnr.nextLine();
+      System.out.print("\nEnter publication date: ");
       ePublicationDate = scnr.nextLine();
+      System.out.print("\nEnter edition: ");
       edition = scnr.nextLine();
+      System.out.print("\nEnter number of volumes: ");
       numVolumes = scnr.nextInt();
 
+      System.out.println();
       scnr.close();
 
       myBook.setTitle(title);
